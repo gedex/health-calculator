@@ -25,7 +25,7 @@
   "author": "Akeda Bagus <admin@gedex.web.id>",
   "repository": {
     "type": "git",
-	"url": "https://github.com/gedex/health-calculator"
+    "url": "https://github.com/gedex/health-calculator"
   },
   "homepage": "https://github.com/gedex/health-calculator#readme",
   "license": "MIT",
