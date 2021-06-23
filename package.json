@@ -1,5 +1,5 @@
 {
-  "name": "fitcalc",
+  "name": "health-calculator",
   "version": "1.0.0",
   "description": "A library to help calculate well known health-related metrics.",
   "main": "lib/index.js",
