@@ -1,0 +1,41 @@
+{
+  "name": "fitcalc",
+  "version": "1.0.0",
+  "description": "A library to help calculate well known health-related metrics.",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rimraf lib",
+    "docs": "jsdoc2md -t README.hbs lib/*js > README.md",
+    "lint": "eslint --config .eslintrc.js --ext .ts,.js .",
+    "test": "npm run build && jest --verbose ./test",
+    "preversion": "npm run clean",
+    "version": "npm run build && npm run test && npm run docs && git add A .",
+    "postversion": "git push && git push --tags"
+  },
+  "keywords": [
+    "health",
+    "fitness",
+    "calculator",
+    "body",
+    "measurement",
+    "dietary",
+    "sports"
+  ],
+  "author": "Akeda Bagus <admin@gedex.web.id>",
+  "repository": {
+    "type": "git",
+	"url": "https://github.com/gedex/health-calculator"
+  },
+  "homepage": "https://github.com/gedex/health-calculator#readme",
+  "license": "MIT",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.28.0",
+    "@typescript-eslint/parser": "^4.28.0",
+    "eslint": "^7.29.0",
+    "eslint-plugin-jsdoc": "^35.4.0",
+    "jest": "^27.0.4",
+    "jsdoc-to-markdown": "^7.0.1",
+    "typescript": "^4.3.2"
+  }
+}

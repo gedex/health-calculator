@@ -1,0 +1,32 @@
+health-calculator
+=================
+
+A library to help calculate well known health-related metrics.
+
+## Install
+
+```
+npm i health-calculator
+```
+
+## Usage
+
+```
+import { dietary } from 'health-calculator';
+
+console.log( dietary.tdee( 'male', 20, 80, 180, 'moderate' ) );
+```
+
+or:
+
+```
+import { tdee } from 'health-calculator/dietary';
+
+console.log( tdee( 'male', 20, 80, 180, 'moderate' ) );
+```
+
+See API reference for more.
+
+## API Reference
+
+{{>main}}
