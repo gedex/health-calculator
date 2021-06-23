@@ -10,7 +10,7 @@
     "lint": "eslint --config .eslintrc.js --ext .ts,.js .",
     "test": "npm run build && jest --verbose ./test",
     "preversion": "npm run clean",
-    "version": "npm run build && npm run test && npm run docs && git add A .",
+    "version": "npm run build && npm run test && npm run docs && git add -A .",
     "postversion": "git push && git push --tags"
   },
   "keywords": [
