@@ -12,17 +12,17 @@ npm i health-calculator
 ## Usage
 
 ```
-import { dietary } from 'health-calculator';
+import hc from 'health-calculator';
 
-console.log( dietary.tdee( 'male', 20, 80, 180, 'moderate' ) );
+console.log( hc.dietary.tdee( 'male', 20, 80, 180, 'moderate' ) );
 ```
 
 or:
 
 ```
-import { tdee } from 'health-calculator/dietary';
+const hc = require( 'health-calculator' );
 
-console.log( tdee( 'male', 20, 80, 180, 'moderate' ) );
+console.log( hc.dietary.tdee( 'male', 20, 80, 180, 'moderate' ) );
 ```
 
 See API reference for more.
